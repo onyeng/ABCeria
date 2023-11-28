@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.auth.Register"
+    android:orientation="vertical"
+    android:background="@drawable/ui_2___halaman_registrasi"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="547dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/register_wrapper_field"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/register_et_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input_login_wrapper"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="18dp"
+            android:hint="Email"
+            android:paddingLeft="15dp"
+            android:textColorHint="#A6000000" />
+        <EditText
+            android:id="@+id/register_et_fullName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_login_wrapper"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="18dp"
+            android:hint="Nama Lengkap"
+            android:paddingLeft="15dp"
+            android:textColorHint="#A6000000" />
+
+        <EditText
+            android:id="@+id/register_et_username"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_login_wrapper"
+            android:drawableStart="@drawable/ic_account_20"
+            android:drawablePadding="18dp"
+            android:hint="Username"
+            android:paddingLeft="15dp"
+            android:textColorHint="#A6000000" />
+
+        <EditText
+            android:id="@+id/register_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_login_wrapper"
+            android:drawableStart="@drawable/ic_lock_20"
+            android:drawablePadding="18dp"
+            android:hint="Kata Sandi"
+            android:paddingLeft="15dp"
+            android:textColorHint="#A6000000" />
+        <EditText
+            android:id="@+id/register_et_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_login_wrapper"
+            android:drawableStart="@drawable/ic_account_20"
+            android:drawablePadding="18dp"
+            android:hint="Konfirmasi Kata Sandi"
+            android:paddingLeft="15dp"
+            android:textColorHint="#A6000000" />
+
+        <TextView
+            android:id="@+id/register_et_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Kata sandi tidak sesuai"
+            android:textColor="#E63232"
+            android:textStyle="bold" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/register_btn_register"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button_masuk"
+            android:text="Daftar"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/register_pb_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:minHeight="20dp"
+            android:minWidth="20dp"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:text="Ayo buat akunmu..."
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.auth.afterLogin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="547dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/register_wrapper_field"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/register_et_fullName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_login_wrapper"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawablePadding="18dp"
+                android:hint="Nama Lengkap"
+                android:paddingLeft="15dp"
+                android:textColorHint="#A6000000" />
+
+            <EditText
+                android:id="@+id/register_et_username"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_login_wrapper"
+                android:drawableStart="@drawable/ic_account_20"
+                android:drawablePadding="18dp"
+                android:hint="Username"
+                android:paddingLeft="15dp"
+                android:textColorHint="#A6000000" />
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/register_btn_register"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rounded_button_masuk"
+                android:text="Simpan"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/register_pb_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:minHeight="20dp"
+                android:minWidth="20dp"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+
+            android:text="Haii kenalan yuk!"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/edit_profile_imv_profileImage"
+            android:layout_width="104dp"
+            android:layout_height="103dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="81dp"
+            android:layout_marginEnd="161dp"
+            app:srcCompat="@drawable/profile" />
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="144dp"
+            android:layout_marginEnd="163dp"
+            app:srcCompat="@drawable/ic_baseline_photo_camera_24" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginHorizontal="10dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:gravity="center"-->
+<!--        android:background="@drawable/leaderboard_time_section"-->
+<!--        >-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/leaderboard_btn_mingguIni"-->
+<!--            android:layout_width="110dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_marginHorizontal="5dp"-->
+<!--            android:background="@drawable/leaderboard_button_wrapper"-->
+<!--            android:text="minggu ini"-->
+<!--            android:gravity="center"-->
+<!--            android:textSize="12sp" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/leaderboard_btn_bulanIni"-->
+<!--            android:layout_width="110dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_marginHorizontal="5dp"-->
+<!--            android:background="@drawable/leaderboard_button_wrapper"-->
+<!--            android:text="bulan ini"-->
+<!--            android:gravity="center"-->
+<!--            android:textSize="10sp" />-->
+
+
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/leaderboard_btn_semuaWaktu"-->
+<!--            android:layout_width="110dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginHorizontal="5dp"-->
+<!--            android:background="@drawable/leaderboard_button_wrapper"-->
+<!--            android:text="Semua Waktu"-->
+<!--            android:textSize="10sp" />-->
+
+<!--    </LinearLayout>-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="-60dp"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/leaderboard_ll_top1"
+            app:layout_constraintEnd_toStartOf="@+id/leaderboard_ll_top2"
+            app:layout_constraintStart_toStartOf="@+id/leaderboard_ll_top1"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/leaderboard_imv_top2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/user_profile_leaderboard" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/leaderboard_ll_top1"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:background="@drawable/leaderboard_top1"
+            android:layout_marginStart="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/leaderboard_tv_top2_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="syuhs"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/leaderboard_tv_top2_points"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/leaderboard_tv_top2_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="190 pts"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+
+            app:cardCornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="@+id/leaderboard_ll_top2"
+            app:layout_constraintStart_toEndOf="@+id/leaderboard_ll_top1"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/leaderboard_imv_top1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/user_profile_leaderboard" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/leaderboard_ll_top2"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:background="@drawable/leaderboard_top2"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintStart_toEndOf="@+id/leaderboard_ll_top1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/leaderboard_tv_top1_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="syuh"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/leaderboard_tv_top1_points"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/leaderboard_tv_top1_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="190 pts"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="50dp"
+            android:layout_marginBottom="-50dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/leaderboard_imv_top3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/user_profile_leaderboard" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/leaderboard_top1"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/leaderboard_ll_top2">
+
+
+            <TextView
+                android:id="@+id/leaderboard_tv_top3_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="syuh"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/leaderboard_tv_top3_points"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/leaderboard_tv_top3_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="190 pts"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/leaderboard_list_wrapper"
+        android:padding="20dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/leaderboard_rv_leaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
